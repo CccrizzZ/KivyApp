@@ -1,0 +1,21 @@
+<GridComponent>
+    GridLayout:
+        cols: 1
+        size: root.width - 400, root.height - 400
+        pos: 200, 200
+        GridLayout:
+            cols: 2
+
+            Label:
+                text: "Receipe Name: "
+
+            TextInput:
+                multiinline:  False
+
+            Label:
+                text: "Style: "
+
+            TextInput:
+                multiinline: False
+        Button: 
+            text: "Submit"
