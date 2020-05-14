@@ -1,21 +1,32 @@
 <GridComponent>
+    # parameters to pass
+    name: ReceipeName
+    style: Style
+
     GridLayout:
+        # parameters
         cols: 1
         size: root.width - 400, root.height - 400
         pos: 200, 200
+
+
         GridLayout:
+            # parameters
             cols: 2
 
+            # child component
             Label:
                 text: "Receipe Name: "
 
             TextInput:
+                id: ReceipeName
                 multiinline:  False
-
             Label:
                 text: "Style: "
-
             TextInput:
+                id: Style
                 multiinline: False
-        Button: 
+        Button:            
             text: "Submit"
+            background_color: [2.5,1,0,1]
+            on_press: root.btn()
